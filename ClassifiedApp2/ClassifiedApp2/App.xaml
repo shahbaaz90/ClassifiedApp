@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prism:PrismApplication
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:prism="clr-namespace:Prism.DryIoc;assembly=Prism.DryIoc.Forms"
+    x:Class="ClassifiedApp2.App">
+    <Application.Resources>
+        <!-- Application resource dictionary -->
+                <ResourceDictionary>
+            <!--Converters-->
+
+            <!--Colors-->
+            <Color
+                x:Key="SideMenuColor">#2b2926</Color>
+            <Color
+                x:Key="PanelColor">#f4f4f4</Color>
+            <Color
+                x:Key="HeadingColor">#2b2926</Color>
+            <Color
+                x:Key="ContentColor">#000</Color>
+            <Color
+                x:Key="LineColor">#e7e8e9</Color>
+            <Color
+                x:Key="PlaceholderColor">#e7e8e9</Color>
+            <Color
+                x:Key="LightFontColor">#162229</Color>
+            <Color
+                x:Key="LightContentColor">#fff</Color>
+            <Color
+                x:Key="OverlayColor">
+                <x:Arguments>
+                    <x:Double>0</x:Double>
+                    <x:Double>0</x:Double>
+                    <x:Double>0</x:Double>
+                    <x:Double>0.4</x:Double>
+                </x:Arguments>
+            </Color>
+            <!--Thickness-->
+            <Thickness
+                x:Key="DefaultThicknessMin">05</Thickness>
+            <Thickness
+                x:Key="DefaultThicknessX">20</Thickness>
+
+            <!--Platform Specific-->
+            <OnPlatform
+                x:Key="MenuButtonMargin"
+                x:TypeArguments="Thickness"
+                iOS="30,0,0,0"
+                Android="30,7,0,7"/>
+            <OnPlatform
+                x:Key="HeadingFontSize"
+                x:TypeArguments="x:Double"
+                iOS="22"
+                Android="22"
+                WinPhone="22" />
+            <OnPlatform
+                x:Key="HeadingFontSizeMax"
+                x:TypeArguments="x:Double"
+                iOS="26"
+                Android="26"
+                WinPhone="26" />
+            <OnPlatform
+                x:Key="TitleFontSize"
+                x:TypeArguments="x:Double"
+                iOS="18"
+                Android="18"
+                WinPhone="18" />
+            <OnPlatform
+                x:Key="RegularFontSize"
+                x:TypeArguments="x:Double"
+                iOS="12"
+                Android="12"
+                WinPhone="12" />
+            <OnPlatform
+                x:Key="RegularFontSizeMax"
+                x:TypeArguments="x:Double"
+                iOS="16"
+                Android="16"
+                WinPhone="16" />
+            <OnPlatform
+                x:Key="SmallFontSize"
+                x:TypeArguments="x:Double"
+                iOS="10"
+                Android="9"
+                WinPhone="9" />
+            <OnPlatform
+                x:Key="RegularFontFamily"
+                x:TypeArguments="x:String"
+                iOS="Amplitude-Regular"
+                Android="Amplitude-Regular"
+                WinPhone="" />
+            <OnPlatform
+                x:Key="Amplitude-Regular"
+                x:TypeArguments="x:String"
+                iOS="Amplitude-Regular"
+                Android="Amplitude-Regular"
+                WinPhone="" />
+            <OnPlatform
+                x:Key="CenturySchoolbook"
+                x:TypeArguments="x:String"
+                iOS="Century Schoolbook"
+                Android="CenturySchoolbookBold.ttf#CenturySchoolbook"
+                WinPhone="" />
+            <OnPlatform
+                x:Key="CenturySchoolbookRegular"
+                x:TypeArguments="x:String"
+                iOS="Century-Schoolbook-Normal"
+                Android="CenturySchoolBookNormal.ttf#CenturySchoolbook"
+                WinPhone="" />
+            <OnPlatform
+                x:Key="CenturySchoolbookBold"
+                x:TypeArguments="x:String"
+                iOS="Century Schoolbook"
+                Android="CenturySchoolbookBold.ttf#CenturySchoolbook"
+                WinPhone="" />
+            <!--Custom Styles-->
+            <Style
+                x:Key="MenuItemLabelStyle"
+                TargetType="Label">
+                <Setter
+                    Property="FontSize"
+                    Value="{StaticResource RegularFontSize}" />
+                <Setter
+                    Property="TextColor"
+                    Value="{StaticResource LightContentColor}" />
+                <Setter
+                    Property="FontFamily"
+                    Value="{StaticResource RegularFontFamily}" />
+                <Setter
+                    Property="VerticalOptions"
+                    Value="Center" />
+            </Style>
+            <Style
+                x:Key="HeadingLabelStyleBold"
+                TargetType="Label">
+                <Setter
+                    Property="FontSize"
+                    Value="{StaticResource HeadingFontSize}" />
+                <Setter
+                    Property="TextColor"
+                    Value="{StaticResource HeadingColor}" />
+                <Setter
+                    Property="FontFamily"
+                    Value="{StaticResource CenturySchoolbookBold}" />
+                <Setter
+                    Property="FontAttributes"
+                    Value="Bold" />
+            </Style>
+            <Style
+                x:Key="HeadingLabelStyle"
+                TargetType="Label">
+                <Setter
+                    Property="FontSize"
+                    Value="{StaticResource HeadingFontSize}" />
+                <Setter
+                    Property="TextColor"
+                    Value="{StaticResource HeadingColor}" />
+                <Setter
+                    Property="FontFamily"
+                    Value="{StaticResource CenturySchoolbook}" />
+                <Setter
+                    Property="FontAttributes"
+                    Value="None" />
+            </Style>
+            <Style
+                x:Key="HeadingLabelStyleMax"
+                TargetType="Label">
+                <Setter
+                    Property="FontSize"
+                    Value="{StaticResource HeadingFontSizeMax}" />
+                <Setter
+                    Property="TextColor"
+                    Value="{StaticResource HeadingColor}" />
+                <Setter
+                    Property="FontFamily"
+                    Value="{StaticResource CenturySchoolbookBold}" />
+                <Setter
+                    Property="FontAttributes"
+                    Value="None" />
+            </Style>
+            <Style
+                x:Key="TitleLabelStyle"
+                TargetType="Label">
+                <Setter
+                    Property="FontSize"
+                    Value="{StaticResource TitleFontSize}" />
+                <Setter
+                    Property="TextColor"
+                    Value="{StaticResource ContentColor}" />
+                <Setter
+                    Property="FontFamily"
+                    Value="{StaticResource CenturySchoolbook}" />
+                <Setter
+                    Property="FontAttributes"
+                    Value="Bold" />
+            </Style>
+            <Style
+                x:Key="ContentLabelStyle"
+                TargetType="Label">
+                <Setter
+                    Property="FontSize"
+                    Value="{StaticResource RegularFontSize}" />
+                <Setter
+                    Property="TextColor"
+                    Value="{StaticResource ContentColor}" />
+                <Setter
+                    Property="FontFamily"
+                    Value="{StaticResource RegularFontFamily}" />
+            </Style>
+            <Style
+                x:Key="ContentLabelStyleMax"
+                TargetType="Label">
+                <Setter
+                    Property="FontSize"
+                    Value="{StaticResource RegularFontSizeMax}" />
+                <Setter
+                    Property="TextColor"
+                    Value="{StaticResource ContentColor}" />
+                <Setter
+                    Property="FontFamily"
+                    Value="{StaticResource RegularFontFamily}" />
+            </Style>
+            <Style
+                x:Key="OpenManualButtonStyle"
+                TargetType="Button">
+                <Setter
+                    Property="FontSize"
+                    Value="{StaticResource RegularFontSize}" />
+                <Setter
+                    Property="TextColor"
+                    Value="{StaticResource HeadingColor}" />
+                <Setter
+                    Property="FontFamily"
+                    Value="{StaticResource RegularFontFamily}" />
+                <Setter
+                    Property="BorderColor"
+                    Value="{StaticResource HeadingColor}" />
+                <Setter
+                    Property="BorderWidth"
+                    Value="1" />
+                <Setter
+                    Property="BorderRadius"
+                    Value="0" />
+                <Setter
+                    Property="Margin"
+                    Value="0,10,0,10" />
+                <Setter
+                    Property="WidthRequest"
+                    Value="120" />
+                <Setter
+                    Property="HeightRequest"
+                    Value="40" />
+            </Style>
+            <Style
+                x:Key="MenuButtonStyle"
+                TargetType="Button">
+                <Setter
+                    Property="FontSize"
+                    Value="{StaticResource RegularFontSize}" />
+                <Setter
+                    Property="FontFamily"
+                    Value="{StaticResource RegularFontFamily}" />
+                <Setter
+                    Property="VerticalOptions"
+                    Value="Center" />
+                <Setter
+                    Property="HorizontalOptions"
+                    Value="Start" />
+                <Setter
+                    Property="Margin"
+                    Value="{StaticResource MenuButtonMargin}" />
+                <Setter
+                    Property="TextColor"
+                    Value="{StaticResource LightContentColor}" />
+                <Setter
+                    Property="BackgroundColor"
+                    Value="{StaticResource SideMenuColor}" />
+                <Setter
+                    Property="BorderColor"
+                    Value="{StaticResource SideMenuColor}" />
+            </Style>
+            <Style
+                x:Key="MenuDelimiterStyle"
+                TargetType="BoxView">
+                <Setter
+                    Property="HorizontalOptions"
+                    Value="FillAndExpand" />
+                <Setter
+                    Property="VerticalOptions"
+                    Value="End" />
+                <Setter
+                    Property="Color"
+                    Value="{StaticResource LineColor}" />
+                <Setter
+                    Property="HeightRequest"
+                    Value="1" />
+                <Setter
+                    Property="Margin"
+                    Value="30, 0, 30, 0" />
+                <Setter
+                    Property="BackgroundColor"
+                    Value="{StaticResource LightContentColor}" />
+            </Style>
+            <Style
+                x:Key="ButtonGeneric"
+                TargetType="Button">
+                <Setter
+                    Property="FontSize"
+                    Value="{StaticResource RegularFontSize}" />
+                <Setter
+                    Property="TextColor"
+                    Value="{StaticResource HeadingColor}" />
+                <Setter
+                    Property="FontFamily"
+                    Value="{StaticResource RegularFontFamily}" />
+            </Style>
+            <Style
+                TargetType="NavigationPage">
+                <Setter
+                    Property="BarBackgroundColor"
+                    Value="{StaticResource LightContentColor}" />
+                <Setter
+                    Property="BarTextColor"
+                    Value="{StaticResource LightFontColor}" />
+            </Style>
+            <Style
+                x:Key="PickerDimensions"
+                TargetType="Picker">
+                <Setter
+                    Property="WidthRequest"
+                    Value="160" />
+                <Setter
+                    Property="HeightRequest"
+                    Value="40" />
+            </Style>
+            <Style
+                x:Key="EntryStyle"
+                TargetType="Entry">
+                <Setter
+                    Property="FontSize"
+                    Value="{StaticResource RegularFontSize}" />
+                <Setter
+                    Property="FontFamily"
+                    Value="{StaticResource RegularFontFamily}" />
+                <Setter
+                    Property="VerticalOptions"
+                    Value="CenterAndExpand" />
+                <Setter
+                    Property="HorizontalOptions"
+                    Value="CenterAndExpand" />
+                <Setter
+                    Property="TextColor"
+                    Value="{StaticResource ContentColor}" />
+                <Setter
+                    Property="PlaceholderColor"
+                    Value="{StaticResource HeadingColor}" />
+                <Setter
+                    Property="HeightRequest"
+                    Value="35" />
+                <Setter
+                    Property="WidthRequest"
+                    Value="250" />
+                <Setter
+                    Property="BackgroundColor"
+                    Value="{StaticResource LightContentColor}" />
+                <Setter
+                    Property="HorizontalTextAlignment"
+                    Value="Center" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</prism:PrismApplication>

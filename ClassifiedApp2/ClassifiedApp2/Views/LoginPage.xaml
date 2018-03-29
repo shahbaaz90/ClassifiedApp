@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ClassifiedApp2.Views.LoginPage">
+    <ContentPage.Content>
+        <Grid
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition
+                    Height="30" />
+                <RowDefinition
+                    Height="*" />
+                <RowDefinition
+                    Height="*" />
+            </Grid.RowDefinitions>
+            <Image
+                Grid.Row="1"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                Aspect="AspectFit"
+                Source="LoginPic_small.png" />
+            <StackLayout
+                Grid.Row="2"
+                HorizontalOptions="Center"
+                Margin="20"
+                Spacing="20">
+                <Button
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    WidthRequest="220"
+                    HeightRequest="40"
+                    BorderColor="Gray"
+                    BorderRadius="20"
+                    BackgroundColor="#4267B2"
+                    Image="fb_icon.png"
+                    TextColor="White"
+                    BorderWidth="1"
+                    Text="Login with Facebook"
+                    Command="{Binding FacebookLoginCommand}" />
+                <Button
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    WidthRequest="220"
+                    HeightRequest="40"
+                    BorderColor="Gray"
+                    BorderRadius="20"
+                    BackgroundColor="White"
+                    BorderWidth="1"
+                    Text="Login with Google" />
+                <Label
+                    WidthRequest="100"
+                    HeightRequest="40"
+                    Text="{Binding Hello}" />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
