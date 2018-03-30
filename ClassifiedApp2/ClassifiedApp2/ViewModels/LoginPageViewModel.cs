@@ -17,7 +17,7 @@ namespace ClassifiedApp2.ViewModels
                                   IFacebookManager facebookManager,
                                   IPageDialogService dialogService) : base(navigationService)
         {
-            Title = "Main Page";
+            Title = "Login";
 
             this.dialogService = dialogService;
             this.facebookManager = facebookManager;
