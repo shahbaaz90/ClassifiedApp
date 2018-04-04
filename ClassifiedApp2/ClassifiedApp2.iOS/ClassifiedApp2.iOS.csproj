@@ -100,6 +100,7 @@
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
     <BundleResource Include="Resources\LoginPic_small.png" />
     <BundleResource Include="Resources\fb_icon.png" />
+    <BundleResource Include="Resources\img_car.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
