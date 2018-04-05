@@ -25,8 +25,7 @@
             <StackLayout
                 Grid.Row="2"
                 HorizontalOptions="Center"
-                Margin="20"
-                Spacing="20">
+                Margin="20">
                 <Button
                     HorizontalOptions="Center"
                     VerticalOptions="Start"
@@ -51,9 +50,21 @@
                     BorderWidth="1"
                     Text="Login with Google" />
                 <Label
-                    WidthRequest="100"
-                    HeightRequest="40"
-                    Text="{Binding Hello}" />
+                    HorizontalOptions="CenterAndExpand"
+                    Text="Don't have an account?"
+                    Margin="0,20,0,0"
+                    FontSize="14"
+                    TextColor="{StaticResource HeadingColor}" />
+                <Label
+                    HorizontalOptions="CenterAndExpand"
+                    FontAttributes="Bold"
+                    TextColor="{StaticResource HeadingColor}"
+                    Text="I'm New">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding GoToCreateAccountCommand}" />
+                    </Label.GestureRecognizers>
+                </Label>
             </StackLayout>
         </Grid>
     </ContentPage.Content>

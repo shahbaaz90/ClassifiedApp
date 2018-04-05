@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using ClassifiedApp2.Models;
 using ClassifiedApp2.Services;
@@ -25,6 +26,12 @@ namespace ClassifiedApp2.ViewModels
             IsLoggedIn = false;
             FacebookLoginCommand = new DelegateCommand(FacebookLogin);
             FacebookLogoutCommand = new DelegateCommand(FacebookLogout);
+            GoToCreateAccountCommand = new DelegateCommand(async () => await GoToCreatAccount());
+        }
+
+        private async Task GoToCreatAccount()
+        {
+            await NavigationService.NavigateAsync("CreateAccountPage");
         }
 
         private void FacebookLogout()
@@ -62,6 +69,7 @@ namespace ClassifiedApp2.ViewModels
 
         public ICommand FacebookLoginCommand { get; private set; }
         public ICommand FacebookLogoutCommand { get; private set; }
+        public ICommand GoToCreateAccountCommand { get; private set; }
 
         private FacebookUser facebookUser;
         public FacebookUser FacebookUser

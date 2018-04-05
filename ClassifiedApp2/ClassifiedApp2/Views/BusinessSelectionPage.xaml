@@ -46,6 +46,12 @@
                     Text="CHOOSE YOUR CUSTOMER TYPE"
                     Font="18"
                     Style="{StaticResource HeadingLabelStyleBold}" />
+                <Picker
+                    HorizontalOptions="Center"
+                    WidthRequest="200"
+                    HeightRequest="40"
+                    ItemsSource="{Binding PickerCustomerType}"
+                    SelectedItem="{Binding SelectedCustomerType}" />
                 <Button
                     HorizontalOptions="FillAndExpand"
                     Text="NEXT"

@@ -100,6 +100,12 @@
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable\fb_icon.png" />
     <AndroidResource Include="Resources\drawable\img_car.png" />
+    <AndroidResource Include="Resources\drawable\ManualLoginEmail.png" />
+    <AndroidResource Include="Resources\drawable\ManualLoginFirstname.png" />
+    <AndroidResource Include="Resources\drawable\ManualLoginLastname.png" />
+    <AndroidResource Include="Resources\drawable\ManualLoginLogo.png" />
+    <AndroidResource Include="Resources\drawable\ManualLoginPassword.png" />
+    <AndroidResource Include="Resources\drawable\ManualLoginUsername.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
@@ -115,6 +121,10 @@
     <ProjectReference Include="..\ClassifiedApp2\ClassifiedApp2.csproj">
       <Project>{736D1787-CEA8-4FBB-82AB-F3C8447A97BB}</Project>
       <Name>ClassifiedApp2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ClassifiedApp2.Common\ClassifiedApp2.Common.csproj">
+      <Project>{D7EFAA57-0C02-4FB8-859F-328BA3165AAD}</Project>
+      <Name>ClassifiedApp2.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

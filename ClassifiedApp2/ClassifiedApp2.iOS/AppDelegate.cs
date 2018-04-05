@@ -5,7 +5,7 @@ using Foundation;
 using Prism;
 using Prism.Ioc;
 using UIKit;
-
+using Xamarin;
 
 namespace ClassifiedApp2.iOS
 {
@@ -26,6 +26,8 @@ namespace ClassifiedApp2.iOS
         {
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App(new iOSInitializer()));
+
+            IQKeyboardManager.SharedManager.Enable = true;
 
             return base.FinishedLaunching(app, options);
         }
