@@ -24,7 +24,7 @@ namespace ClassifiedApp2
         {
             this.InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/LoginPage");
+            await NavigationService.NavigateAsync("HomePage");
             //await NavigationService.NavigateAsync("LoginPage");
         }
 
@@ -33,6 +33,7 @@ namespace ClassifiedApp2
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage>();
             containerRegistry.RegisterForNavigation<LoginPage>();
+            containerRegistry.RegisterForNavigation<HomePage>();
         }
     }
 }
