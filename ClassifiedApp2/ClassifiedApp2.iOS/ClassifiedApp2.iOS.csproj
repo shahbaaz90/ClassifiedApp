@@ -205,12 +205,14 @@
       <Name>ClassifiedApp2</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BundleResource Include="Resources\Home.png" />
+  </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\All.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Home.png" />
+    <BundleResource Include="Resources\Videos.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Leisure.png" />
@@ -225,10 +227,40 @@
     <BundleResource Include="Resources\Tech.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Videos.png" />
+    <BundleResource Include="Resources\Womens.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Womens.png" />
+    <BundleResource Include="Resources\Coupons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Coupons1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Coupons2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Limited.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Limited1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Limited2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Limited3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Pic1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Pic2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Pic3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Recent.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

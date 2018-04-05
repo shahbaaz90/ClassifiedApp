@@ -3,27 +3,51 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ClassifiedApp2.Views.HomePage"
              BackgroundColor="#D9ECF3"
+             Title="Home Page"
              >
     <ContentPage.Content >
         <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <Grid.RowDefinitions>
                 <RowDefinition Height="75" />
+                <RowDefinition Height="150" />
+                <RowDefinition Height="150" />
             </Grid.RowDefinitions>
             <StackLayout Grid.Row="0" Orientation="Horizontal" BackgroundColor="#F7F3F4">
-                <Image Source="All.png"  Aspect="AspectFit" HeightRequest="55" HorizontalOptions="StartAndExpand" ></Image>
+                <Image Source="All.png"  Aspect="AspectFit" HeightRequest="70" WidthRequest="68" HorizontalOptions="StartAndExpand" ></Image>
                 <ScrollView  Orientation="Horizontal" HorizontalOptions="FillAndExpand">
                     <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                        <Image Source="Home.png" Aspect="AspectFit" HeightRequest="55" ></Image>
-                        <Image Source="Leisure.png" Aspect="AspectFit" HeightRequest="55" ></Image>
-                        <Image Source="Mens.png" Aspect="AspectFit" HeightRequest="55" ></Image>
-                        <Image Source="Motors.png" Aspect="AspectFit" HeightRequest="55" ></Image>
-                        <Image Source="Tech.png" Aspect="AspectFit" HeightRequest="55" ></Image>
-                        <Image Source="Womens.png" Aspect="AspectFit" HeightRequest="55" ></Image>
+                        <Image Source="Home.png" Aspect="AspectFit" HeightRequest="70" WidthRequest="68"></Image>
+                        <Image Source="Leisure.png" Aspect="AspectFit" HeightRequest="70" WidthRequest="68"></Image>
+                        <Image Source="Mens.png" Aspect="AspectFit" HeightRequest="70" WidthRequest="68"></Image>
+                        <Image Source="Motors.png" Aspect="AspectFit" HeightRequest="70" WidthRequest="68"></Image>
+                        <Image Source="Tech.png" Aspect="AspectFit" HeightRequest="70" WidthRequest="68"></Image>
+                        <Image Source="Womens.png" Aspect="AspectFit" HeightRequest="70" WidthRequest="68" ></Image>
                     </StackLayout>
-                </ScrollView>        
-                <Image Source="Videos.png"  Aspect="AspectFit" HeightRequest="55" HorizontalOptions="EndAndExpand" ></Image>
+                </ScrollView>
+                <Image Source="Videos.png"  Aspect="AspectFit" HeightRequest="70" WidthRequest="68" HorizontalOptions="EndAndExpand" ></Image>
              </StackLayout>
-            <StackLayout Grid.Row="1" Orientation="Horizontal"></StackLayout>
+            <StackLayout Grid.Row="1" Orientation="Horizontal" Padding="5,0,0,0">
+                <Image Source="Coupons.png" Aspect="AspectFit" WidthRequest="120" HorizontalOptions="StartAndExpand"></Image>
+                <ScrollView Orientation="Horizontal"  HorizontalOptions="FillAndExpand" >
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                        <Image Source="Coupons1.png" WidthRequest="160" Aspect="AspectFit"></Image>
+                        <Image Source="Coupons2.png" WidthRequest="160" Aspect="AspectFit"></Image>
+                        <Image Source="Coupons1.png" WidthRequest="160" Aspect="AspectFit"></Image>
+                        <Image Source="Coupons2.png" WidthRequest="160" Aspect="AspectFit"></Image>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+            <StackLayout Grid.Row="2" Orientation="Horizontal" Padding="5,0,0,0">
+                <Image Source="Limited.png" Aspect="AspectFit" WidthRequest="120" HorizontalOptions="StartAndExpand"></Image>
+                <ScrollView Orientation="Horizontal"  HorizontalOptions="FillAndExpand" >
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                        <Image Source="Limited1.png" WidthRequest="160" Aspect="AspectFit"></Image>
+                        <Image Source="Limited2.png" WidthRequest="160" Aspect="AspectFit"></Image>
+                        <Image Source="Limited3.png" WidthRequest="160" Aspect="AspectFit"></Image>
+                        
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
         </Grid>
         
     </ContentPage.Content>
