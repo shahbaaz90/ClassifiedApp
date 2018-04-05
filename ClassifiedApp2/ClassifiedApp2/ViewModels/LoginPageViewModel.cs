@@ -17,7 +17,7 @@ namespace ClassifiedApp2.ViewModels
                                   IFacebookManager facebookManager,
                                   IPageDialogService dialogService) : base(navigationService)
         {
-            Title = "Main Page";
+            Title = "Login";
 
             this.dialogService = dialogService;
             this.facebookManager = facebookManager;
@@ -38,16 +38,18 @@ namespace ClassifiedApp2.ViewModels
             facebookManager.Login(OnLoginComplete);
         }
 
-        private void OnLoginComplete(FacebookUser fbUser, string message)
+        private async void OnLoginComplete(FacebookUser fbUser, string message)
         {
             if (fbUser != null)
             {
                 FacebookUser = fbUser;
                 IsLoggedIn = true;
+
+                await NavigationService.NavigateAsync("BusinessSelectionPage");
             }
             else
             {
-                dialogService.DisplayAlertAsync("Error", message, "Ok");
+                await dialogService.DisplayAlertAsync("Error", message, "Ok");
             }
         }
 

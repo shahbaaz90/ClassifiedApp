@@ -33,7 +33,12 @@ namespace ClassifiedApp2
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage>();
             containerRegistry.RegisterForNavigation<LoginPage>();
+<<<<<<< HEAD
             containerRegistry.RegisterForNavigation<HomePage>();
+=======
+            containerRegistry.RegisterForNavigation<BusinessSelectionPage>();
+            containerRegistry.RegisterForNavigation<CellNumberPage>();
+>>>>>>> develop
         }
     }
 }

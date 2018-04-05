@@ -101,18 +101,18 @@ namespace ClassifiedApp2.Droid.Services
             }
 
             if (p0.Has("gender"))
-                last_name = p0.GetString("gender");
-            
+                gender = p0.GetString("gender");
+
             if (p0.Has("birthday"))
-                last_name = p0.GetString("birthday");
+                birthday = p0.GetString("birthday");
 
             if (p0.Has("location"))
             {
                 var p2 = p0.GetJSONObject("location");
                 if (p2.Has("name"))
-                    {
-                        pictureUrl = p2.GetString("name");
-                    }
+                {
+                    locationString = p2.GetString("name");
+                }
             }
 
             onLoginComplete?.Invoke(new FacebookUser(id, AccessToken.CurrentAccessToken.Token, first_name, last_name, email, pictureUrl, gender, birthday, locationString), string.Empty);

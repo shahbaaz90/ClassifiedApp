@@ -99,6 +99,8 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
     <AndroidResource Include="Resources\drawable\LoginPic_small.png" />
     <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable\fb_icon.png" />
+    <AndroidResource Include="Resources\drawable\img_car.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
