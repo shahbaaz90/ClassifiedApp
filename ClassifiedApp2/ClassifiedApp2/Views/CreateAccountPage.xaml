@@ -8,7 +8,10 @@
         <ScrollView>
             <Grid
                 HorizontalOptions="FillAndExpand"
-                VerticalOptions="FillAndExpand">
+                VerticalOptions="FillAndExpand"
+                ColumnSpacing="20"
+                RowSpacing="20"
+                Margin="{StaticResource DefaultThicknessX}">
                 <Grid.RowDefinitions>
                     <RowDefinition
                         Height="Auto" />
@@ -23,22 +26,22 @@
                     <RowDefinition
                         Height="Auto" />
                     <RowDefinition
-                        Height="Auto" />
+                        Height="3*" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition
-                        Width="40" />
-                    <ColumnDefinition
                         Width="*" />
+                    <ColumnDefinition
+                        Width="10*" />
                 </Grid.ColumnDefinitions>
                 <Image
                     Grid.Row="0"
                     Grid.Column="0"
-                    Grid.ColumnSpan="2"
                     WidthRequest="80"
-                    HeightRequest="80"
+                    Grid.ColumnSpan="2"
                     Aspect="AspectFit"
-                    Source="ManualLoginLogo.png" />
+                    Source="ManualLoginLogo.png"
+                    Margin="0,30" />
                 <Image
                     Grid.Row="1"
                     Grid.Column="0"
@@ -67,9 +70,39 @@
                 <Entry
                     Grid.Row="1"
                     Grid.Column="1"
-                    HorizontalOptions="FillAndExpand"
                     Placeholder="USERNAME"
+                    Keyboard="Email"
                     TextColor="{StaticResource HeadingColor}" />
+                <Entry
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Placeholder="FIRST NAME"
+                    TextColor="{StaticResource HeadingColor}" />
+                <Entry
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    Placeholder="LAST NAME"
+                    TextColor="{StaticResource HeadingColor}" />
+                <Entry
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    Placeholder="EMAIL"
+                    Keyboard="Email"
+                    TextColor="{StaticResource HeadingColor}" />
+                <Entry
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    Placeholder="PASSWORD"
+                    IsPassword="true"
+                    TextColor="{StaticResource HeadingColor}" />
+                <Button
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    VerticalOptions="Center"
+                    Text="REGISTER"
+                    Margin="0,30"
+                    Style="{StaticResource ButtonLoginScreens}" />
             </Grid>
         </ScrollView>
     </ContentPage.Content>

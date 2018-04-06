@@ -28,6 +28,7 @@ namespace ClassifiedApp2.iOS
             LoadApplication(new App(new iOSInitializer()));
 
             IQKeyboardManager.SharedManager.Enable = true;
+            IQKeyboardManager.SharedManager.EnableAutoToolbar = false;
 
             return base.FinishedLaunching(app, options);
         }

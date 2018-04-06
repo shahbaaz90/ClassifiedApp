@@ -38,6 +38,8 @@
             </Color>
             <!--Thickness-->
             <Thickness
+                x:Key="DefaultThickness">10</Thickness>
+            <Thickness
                 x:Key="DefaultThicknessMin">05</Thickness>
             <Thickness
                 x:Key="DefaultThicknessX">20</Thickness>
@@ -134,14 +136,14 @@
                 x:Key="ButtonLoginScreens"
                 TargetType="Button">
                 <Setter
-                    Property="WidthRequest"
-                    Value="220" />
-                <Setter
                     Property="HeightRequest"
-                    Value="40" />
+                    Value="60" />
+                <Setter
+                    Property="HorizontalOptions"
+                    Value="FillAndExpand" />
                 <Setter
                     Property="BorderRadius"
-                    Value="20" />
+                    Value="30" />
                 <Setter
                     Property="TextColor"
                     Value="White" />
