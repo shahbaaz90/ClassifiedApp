@@ -26,6 +26,7 @@ namespace ClassifiedApp2.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Splat.Resource.String.library_name = global::ClassifiedApp2.Droid.Resource.String.library_name;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::ClassifiedApp2.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -4151,8 +4152,8 @@ namespace ClassifiedApp2.Droid
 			// aapt resource value: 0x7f08003f
 			public const int abc_toolbar_collapse_description = 2131230783;
 			
-			// aapt resource value: 0x7f080057
-			public const int app_name = 2131230807;
+			// aapt resource value: 0x7f080058
+			public const int app_name = 2131230808;
 			
 			// aapt resource value: 0x7f08004e
 			public const int appbar_scrolling_view_behavior = 2131230798;
@@ -4232,14 +4233,17 @@ namespace ClassifiedApp2.Droid
 			// aapt resource value: 0x7f080016
 			public const int com_facebook_tooltip_default = 2131230742;
 			
-			// aapt resource value: 0x7f080058
-			public const int facebook_app_id = 2131230808;
-			
 			// aapt resource value: 0x7f080059
-			public const int fb_login_protocol_scheme = 2131230809;
+			public const int facebook_app_id = 2131230809;
+			
+			// aapt resource value: 0x7f08005a
+			public const int fb_login_protocol_scheme = 2131230810;
+			
+			// aapt resource value: 0x7f080057
+			public const int hello = 2131230807;
 			
 			// aapt resource value: 0x7f080056
-			public const int hello = 2131230806;
+			public const int library_name = 2131230806;
 			
 			// aapt resource value: 0x7f080017
 			public const int messenger_send_button_text = 2131230743;

@@ -5,6 +5,8 @@ using ClassifiedApp2.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Prism.DryIoc;
+using ClassifiedApp2.Common.Services;
+using ClassifiedApp2.Services;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace ClassifiedApp2
@@ -36,6 +38,8 @@ namespace ClassifiedApp2
             containerRegistry.RegisterForNavigation<BusinessSelectionPage>();
             containerRegistry.RegisterForNavigation<CellNumberPage>();
             containerRegistry.RegisterForNavigation<CreateAccountPage>();
+
+            containerRegistry.Register<ICacheService, CacheService>();
         }
     }
 }
