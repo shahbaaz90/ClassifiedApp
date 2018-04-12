@@ -25,5 +25,11 @@
     <Compile Update="Views\Tab4ProfilePage.xaml.cs">
       <DependentUpon>Tab4ProfilePage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\Tab1HomePage.xaml.cs">
+      <DependentUpon>Tab1HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Tab3ChatPage.xaml.cs">
+      <DependentUpon>Tab3ChatPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>
