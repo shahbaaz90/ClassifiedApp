@@ -6,9 +6,9 @@
     xmlns:local="clr-namespace:ClassifiedApp2.Views"
     Title="{Binding Title}">
     <TabbedPage.Children>
-        <local:Tab1HomePage Title="Home" Icon="HomeIcon.png" />
-        <local:Tab2AlertsPage Title="Alerts" Icon="AlertsIcon.png" />
-        <local:Tab3ChatPage Title="Chat" Icon="ChatsIcon.png" />
-        <local:Tab4ProfilePage Title="Profile" Icon="ProfileIcon.png" />
+        <local:Tab1HomePage Icon="HomeIcon.png" />
+        <local:Tab2AlertsPage Icon="AlertsIcon.png" />
+        <local:Tab3ChatPage Icon="ChatsIcon.png" />
+        <local:Tab4ProfilePage Icon="ProfileIcon.png" />
     </TabbedPage.Children>
 </TabbedPage>

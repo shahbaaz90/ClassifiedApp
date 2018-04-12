@@ -7,7 +7,7 @@ namespace ClassifiedApp2.ViewModels
     {
         public Tab3ChatPageViewModel(INavigationService navigationService) : base(navigationService)
         {
-            Title = "Chat Page";
+            Title = "Chat";
         }
     }
 }

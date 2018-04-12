@@ -7,7 +7,7 @@ namespace ClassifiedApp2.ViewModels
     {
         public Tab4ProfilePageViewModel(INavigationService navigationService) : base(navigationService)
         {
-            Title = "Profile Page";
+            Title = "Profile";
         }
     }
 }
