@@ -7,6 +7,7 @@ namespace ClassifiedApp2.ViewModels
     {
         public Tab2AlertsPageViewModel(INavigationService navigationService) : base(navigationService) 
         {
+            Title = "Alerts Page";
         }
     }
 }

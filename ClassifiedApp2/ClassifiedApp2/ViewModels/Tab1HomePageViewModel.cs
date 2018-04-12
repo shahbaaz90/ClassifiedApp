@@ -8,6 +8,7 @@ namespace ClassifiedApp2.ViewModels
     {
         public Tab1HomePageViewModel(INavigationService navigationService) : base(navigationService)
         {
+            Title = "Home Page";
         }
 
         async void GoHome()

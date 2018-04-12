@@ -17,12 +17,12 @@ namespace ClassifiedApp2.ViewModels
         {
             Title = "Setup";
 
-            NextCommand = new DelegateCommand(async () => await MoveToCellNumberPage());
+            NextCommand = new DelegateCommand(MoveToCellNumberPage);
 
             PopulateCustomerPicker();
         }
 
-        private async Task MoveToCellNumberPage()
+        private async void MoveToCellNumberPage()
         {
             await NavigationService.NavigateAsync("CellNumberPage");
         }

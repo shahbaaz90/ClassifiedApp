@@ -7,6 +7,7 @@ namespace ClassifiedApp2.ViewModels
     {
         public RootTabbedPageViewModel(INavigationService navigationService) : base(navigationService)
         {
+            Title = "Classified";
         }
     }
 }

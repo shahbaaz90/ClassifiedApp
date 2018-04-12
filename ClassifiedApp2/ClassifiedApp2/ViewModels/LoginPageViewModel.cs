@@ -26,10 +26,10 @@ namespace ClassifiedApp2.ViewModels
             IsLoggedIn = false;
             FacebookLoginCommand = new DelegateCommand(FacebookLogin);
             FacebookLogoutCommand = new DelegateCommand(FacebookLogout);
-            GoToCreateAccountCommand = new DelegateCommand(async () => await GoToCreatAccount());
+            GoToCreateAccountCommand = new DelegateCommand(GoToCreatAccount);
         }
 
-        private async Task GoToCreatAccount()
+        private async void GoToCreatAccount()
         {
             await NavigationService.NavigateAsync("CreateAccountPage");
         }

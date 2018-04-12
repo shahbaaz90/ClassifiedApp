@@ -10,16 +10,8 @@ namespace ClassifiedApp2.ViewModels
     {
         public CellNumberPageViewModel(INavigationService navigationService) : base(navigationService)
         {
-            GoToHomePageCommand = new DelegateCommand(async () => await GoToHomePage());
+            
         }
 
-        private async Task GoToHomePage()
-        {
-            await NavigationService.NavigateAsync(
-                new Uri("/NavigationPage/RootTabbedPage?selectedTab=Tab1HomePage",
-                        UriKind.Absolute));
-        }
-
-        public ICommand GoToHomePageCommand { get; private set; }
     }
 }
