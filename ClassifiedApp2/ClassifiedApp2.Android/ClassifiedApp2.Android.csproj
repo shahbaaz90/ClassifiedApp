@@ -109,6 +109,10 @@
     <AndroidResource Include="Resources\drawable\ManualLoginLogo.png" />
     <AndroidResource Include="Resources\drawable\ManualLoginPassword.png" />
     <AndroidResource Include="Resources\drawable\ManualLoginUsername.png" />
+    <AndroidResource Include="Resources\drawable\AlertsIcon.png" />
+    <AndroidResource Include="Resources\drawable\ChatsIcon.png" />
+    <AndroidResource Include="Resources\drawable\HomeIcon.png" />
+    <AndroidResource Include="Resources\drawable\ProfileIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />

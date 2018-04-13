@@ -107,6 +107,10 @@
     <BundleResource Include="Resources\ManualLoginLogo.png" />
     <BundleResource Include="Resources\ManualLoginPassword.png" />
     <BundleResource Include="Resources\ManualLoginUsername.png" />
+    <BundleResource Include="Resources\AlertsIcon.png" />
+    <BundleResource Include="Resources\ChatsIcon.png" />
+    <BundleResource Include="Resources\HomeIcon.png" />
+    <BundleResource Include="Resources\ProfileIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

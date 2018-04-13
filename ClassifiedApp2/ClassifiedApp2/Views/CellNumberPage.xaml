@@ -59,7 +59,7 @@
                     HorizontalOptions="FillAndExpand"
                     Text="NEXT"
                     Style="{StaticResource ButtonLoginScreens}"
-                    Command="{Binding NextCommand}" />
+                    Command="{Binding GoToHomePageCommand}" />
             </StackLayout>
         </Grid>
     </ContentPage.Content>

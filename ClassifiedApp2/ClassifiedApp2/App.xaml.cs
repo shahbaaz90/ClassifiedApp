@@ -39,6 +39,12 @@ namespace ClassifiedApp2
             containerRegistry.RegisterForNavigation<CellNumberPage>();
             containerRegistry.RegisterForNavigation<CreateAccountPage>();
 
+            containerRegistry.RegisterForNavigation<RootTabbedPage>();
+            containerRegistry.RegisterForNavigation<Tab1HomePage, Tab1HomePageViewModel>();
+            containerRegistry.RegisterForNavigation<Tab2AlertsPage>();
+            containerRegistry.RegisterForNavigation<Tab3ChatPage>();
+            containerRegistry.RegisterForNavigation<Tab4ProfilePage>();
+
             containerRegistry.Register<ICacheService, CacheService>();
         }
     }

@@ -18,4 +18,18 @@
   <ItemGroup>
     <ProjectReference Include="..\..\ClassifiedApp2.Common\ClassifiedApp2.Common.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\Tab2AlertsPage.xaml.cs">
+      <DependentUpon>Tab2AlertsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Tab4ProfilePage.xaml.cs">
+      <DependentUpon>Tab4ProfilePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Tab1HomePage.xaml.cs">
+      <DependentUpon>Tab1HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Tab3ChatPage.xaml.cs">
+      <DependentUpon>Tab3ChatPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>
