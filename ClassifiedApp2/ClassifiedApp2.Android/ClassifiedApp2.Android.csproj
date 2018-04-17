@@ -88,6 +88,8 @@
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\FacebookManager.cs" />
+    <Compile Include="Renderers\CustomTabbedPageRenderer.cs" />
+    <Compile Include="Renderers\HideScrollBarRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -113,6 +115,26 @@
     <AndroidResource Include="Resources\drawable\ChatsIcon.png" />
     <AndroidResource Include="Resources\drawable\HomeIcon.png" />
     <AndroidResource Include="Resources\drawable\ProfileIcon.png" />
+    <AndroidResource Include="Resources\menu\mainmenu.xml" />
+    <AndroidResource Include="Resources\drawable\All.png" />
+    <AndroidResource Include="Resources\drawable\Coupons.png" />
+    <AndroidResource Include="Resources\drawable\Coupons1.png" />
+    <AndroidResource Include="Resources\drawable\Coupons2.png" />
+    <AndroidResource Include="Resources\drawable\Home.png" />
+    <AndroidResource Include="Resources\drawable\Leisure.png" />
+    <AndroidResource Include="Resources\drawable\Limited.png" />
+    <AndroidResource Include="Resources\drawable\Limited1.png" />
+    <AndroidResource Include="Resources\drawable\Limited2.png" />
+    <AndroidResource Include="Resources\drawable\Limited3.png" />
+    <AndroidResource Include="Resources\drawable\Mens.png" />
+    <AndroidResource Include="Resources\drawable\Motors.png" />
+    <AndroidResource Include="Resources\drawable\Pic1.png" />
+    <AndroidResource Include="Resources\drawable\Pic2.png" />
+    <AndroidResource Include="Resources\drawable\Pic3.png" />
+    <AndroidResource Include="Resources\drawable\Recent.png" />
+    <AndroidResource Include="Resources\drawable\Tech.png" />
+    <AndroidResource Include="Resources\drawable\Videos.png" />
+    <AndroidResource Include="Resources\drawable\Womens.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
@@ -137,6 +159,8 @@
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
     <Folder Include="Services\" />
+    <Folder Include="Resources\menu\" />
+    <Folder Include="Renderers\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

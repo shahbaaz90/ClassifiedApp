@@ -102,7 +102,8 @@
                     VerticalOptions="Center"
                     Text="REGISTER"
                     Margin="0,30"
-                    Style="{StaticResource ButtonLoginScreens}" />
+                    Style="{StaticResource ButtonLoginScreens}"
+                    Command="{Binding GoToBusinessSelectCommand}" />
             </Grid>
         </ScrollView>
     </ContentPage.Content>

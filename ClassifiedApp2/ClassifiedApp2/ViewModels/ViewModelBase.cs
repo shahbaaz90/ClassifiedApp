@@ -31,7 +31,6 @@ namespace ClassifiedApp2.ViewModels
             set { SetProperty(ref isBusy, value); }
         }
 
-
         private ICommand goToHomePageCommand;
         public ICommand GoToHomePageCommand
         {

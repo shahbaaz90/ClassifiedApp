@@ -1,32 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Windows.Input;
-using ClassifiedApp2.Controls;
 using Xamarin.Forms;
 
-namespace ClassifiedApp2.Views
+namespace ClassifiedApp2.Controls
 {
-    public partial class RootTabbedPage : TabbedPage
+    public class CustomTabbedPage : TabbedPage
     {
-        public RootTabbedPage()
-        {
-            InitializeComponent();
-        }
-
         public static readonly BindableProperty SearchPlaceHolderTextProperty = BindableProperty.Create(
             nameof(SearchPlaceHolderText), 
             typeof(string), 
-            typeof(RootTabbedPage), 
+            typeof(CustomTabbedPage), 
             string.Empty);
         public static readonly BindableProperty SearchTextProperty = BindableProperty.Create(
             nameof(SearchText), 
             typeof(string), 
-            typeof(RootTabbedPage), 
+            typeof(CustomTabbedPage), 
             string.Empty);
         public static readonly BindableProperty SearchCommandProperty = BindableProperty.Create(
             nameof(SearchCommand), 
             typeof(ICommand), 
-            typeof(RootTabbedPage));
+            typeof(CustomTabbedPage));
 
         public string SearchPlaceHolderText
         {

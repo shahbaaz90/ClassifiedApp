@@ -2,6 +2,8 @@
 using Android.Content;
 using Android.Content.PM;
 using Android.OS;
+using Android.Support.V7.Widget;
+using Android.Views;
 using ClassifiedApp2.Droid.Services;
 using ClassifiedApp2.Services;
 using DryIoc;
@@ -16,6 +18,8 @@ namespace ClassifiedApp2.Droid
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         App appInstance;
+        public static Toolbar ToolBar { get; private set; }
+
         protected override void OnCreate(Bundle bundle)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
@@ -43,7 +47,13 @@ namespace ClassifiedApp2.Droid
                 (manager as FacebookManager).callbackManager.OnActivityResult(requestCode, (int)resultCode, data);
             }
         }
-    }
+
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            ToolBar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            return base.OnCreateOptionsMenu(menu);
+        }
+	}
 
     public class AndroidInitializer : IPlatformInitializer
     {

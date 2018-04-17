@@ -93,6 +93,7 @@
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\FacebookManager.cs" />
+    <Compile Include="Renderers\CustomTabbedPageRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-Portrait.png" />
@@ -111,6 +112,25 @@
     <BundleResource Include="Resources\ChatsIcon.png" />
     <BundleResource Include="Resources\HomeIcon.png" />
     <BundleResource Include="Resources\ProfileIcon.png" />
+    <BundleResource Include="Resources\All.png" />
+    <BundleResource Include="Resources\Coupons.png" />
+    <BundleResource Include="Resources\Coupons1.png" />
+    <BundleResource Include="Resources\Coupons2.png" />
+    <BundleResource Include="Resources\Home.png" />
+    <BundleResource Include="Resources\Leisure.png" />
+    <BundleResource Include="Resources\Limited.png" />
+    <BundleResource Include="Resources\Limited1.png" />
+    <BundleResource Include="Resources\Limited2.png" />
+    <BundleResource Include="Resources\Limited3.png" />
+    <BundleResource Include="Resources\Mens.png" />
+    <BundleResource Include="Resources\Motors.png" />
+    <BundleResource Include="Resources\Pic1.png" />
+    <BundleResource Include="Resources\Pic2.png" />
+    <BundleResource Include="Resources\Pic3.png" />
+    <BundleResource Include="Resources\Recent.png" />
+    <BundleResource Include="Resources\Tech.png" />
+    <BundleResource Include="Resources\Videos.png" />
+    <BundleResource Include="Resources\Womens.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -145,6 +165,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />
+    <Folder Include="Renderers\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
