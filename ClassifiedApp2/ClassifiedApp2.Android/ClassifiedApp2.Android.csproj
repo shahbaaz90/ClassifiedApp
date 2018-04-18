@@ -137,6 +137,10 @@
     <AndroidResource Include="Resources\drawable\Tech.png" />
     <AndroidResource Include="Resources\drawable\Videos.png" />
     <AndroidResource Include="Resources\drawable\Womens.png" />
+    <AndroidResource Include="Resources\drawable\AlertsIcon.png" />
+    <AndroidResource Include="Resources\drawable\ChatsIcon.png" />
+    <AndroidResource Include="Resources\drawable\HomeIcon.png" />
+    <AndroidResource Include="Resources\drawable\ProfileIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
