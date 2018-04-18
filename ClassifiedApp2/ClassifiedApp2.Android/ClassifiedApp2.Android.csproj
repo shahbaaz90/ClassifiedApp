@@ -82,6 +82,12 @@
     <PackageReference Include="akavache.sqlite3">
       <Version>6.0.0-alpha0038</Version>
     </PackageReference>
+    <PackageReference Include="BottomNavigationBar">
+      <Version>1.4.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="LH.BottomNavigationBar.XF">
+      <Version>1.0.42</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -111,10 +117,6 @@
     <AndroidResource Include="Resources\drawable\ManualLoginLogo.png" />
     <AndroidResource Include="Resources\drawable\ManualLoginPassword.png" />
     <AndroidResource Include="Resources\drawable\ManualLoginUsername.png" />
-    <AndroidResource Include="Resources\drawable\AlertsIcon.png" />
-    <AndroidResource Include="Resources\drawable\ChatsIcon.png" />
-    <AndroidResource Include="Resources\drawable\HomeIcon.png" />
-    <AndroidResource Include="Resources\drawable\ProfileIcon.png" />
     <AndroidResource Include="Resources\menu\mainmenu.xml" />
     <AndroidResource Include="Resources\drawable\All.png" />
     <AndroidResource Include="Resources\drawable\Coupons.png" />

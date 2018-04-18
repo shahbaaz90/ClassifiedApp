@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Input;
+using BottomBar.XamarinForms;
 using ClassifiedApp2.Controls;
 using Xamarin.Forms;
 
 namespace ClassifiedApp2.Views
 {
-    public partial class RootTabbedPage : TabbedPage
+    public partial class RootTabbedPage : BottomBarPage
     {
         public RootTabbedPage()
         {

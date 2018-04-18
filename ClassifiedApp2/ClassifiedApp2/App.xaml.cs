@@ -7,6 +7,7 @@ using Xamarin.Forms.Xaml;
 using Prism.DryIoc;
 using ClassifiedApp2.Common.Services;
 using ClassifiedApp2.Services;
+using System;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace ClassifiedApp2
@@ -27,7 +28,10 @@ namespace ClassifiedApp2
             this.InitializeComponent();
 
             await NavigationService.NavigateAsync("NavigationPage/LoginPage");
-            //await NavigationService.NavigateAsync("LoginPage");
+
+           //await NavigationService.NavigateAsync(
+                //new Uri("/NavigationPage/RootTabbedPage?selectedTab=Tab1HomePage",
+                        //UriKind.Absolute));
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)

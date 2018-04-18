@@ -44,7 +44,7 @@
                 <Label
                     HorizontalOptions="CenterAndExpand"
                     Text="CHOOSE YOUR CUSTOMER TYPE"
-                    Font="18"
+                    FontSize="18"
                     Style="{StaticResource HeadingLabelStyleBold}" />
                 <Picker
                     HorizontalOptions="Center"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TabbedPage
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+<xf:BottomBarPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xf="clr-namespace:BottomBar.XamarinForms;assembly=BottomBar.XamarinForms"
     x:Class="ClassifiedApp2.Views.RootTabbedPage"
     xmlns:local="clr-namespace:ClassifiedApp2.Views"
     Title="{Binding Title}">
@@ -11,4 +11,4 @@
         <local:Tab3ChatPage Icon="ChatsIcon.png" />
         <local:Tab4ProfilePage Icon="ProfileIcon.png" />
     </TabbedPage.Children>
-</TabbedPage>
+</xf:BottomBarPage>
