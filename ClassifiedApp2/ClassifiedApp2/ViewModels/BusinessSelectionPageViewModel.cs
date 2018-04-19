@@ -22,6 +22,33 @@ namespace ClassifiedApp2.ViewModels
             PopulateCustomerPicker();
         }
 
+        private bool isIndividual = true;
+        public bool IsIndividual
+        {
+            get { return isIndividual; }
+            set
+            {
+                if (IsIndividual != value)
+                {
+                    SetProperty(ref isIndividual, value);
+                    RaisePropertyChanged("IsBusiness");
+                }
+            }
+        }
+
+        public bool IsBusiness
+        {
+            get { return !isIndividual; }
+            set
+            {
+                if (isIndividual != value)
+                {
+                    SetProperty(ref isIndividual, !value);
+                    RaisePropertyChanged("IsIndividual");
+                }
+            }
+        }
+
         private async void MoveToCellNumberPage()
         {
             await NavigationService.NavigateAsync("CellNumberPage");
