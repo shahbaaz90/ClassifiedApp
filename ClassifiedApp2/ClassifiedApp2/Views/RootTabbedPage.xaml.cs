@@ -12,6 +12,8 @@ namespace ClassifiedApp2.Views
         public RootTabbedPage()
         {
             InitializeComponent();
+
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         public static readonly BindableProperty SearchPlaceHolderTextProperty = BindableProperty.Create(

@@ -10,6 +10,10 @@
             <!--Converters-->
             <!--Colors-->
             <Color
+                x:Key="PrimaryColor">#FF4081</Color>
+            <Color
+                x:Key="SecondaryColor">#2b2926</Color>
+            <Color
                 x:Key="SideMenuColor">#2b2926</Color>
             <Color
                 x:Key="PanelColor">#f4f4f4</Color>

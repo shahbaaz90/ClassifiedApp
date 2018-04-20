@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="ClassifiedApp2.Controls.CustomHeader">
+    <ContentView.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition
+                    Height="60" />
+            </Grid.RowDefinitions>
+            <BoxView
+                Grid.Row="0"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                BackgroundColor="{StaticResource PrimaryColor}" />
+            <StackLayout
+                Grid.Row="0"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                Spacing="5"
+                Orientation="Horizontal">
+                <StackLayout.Padding>
+                    <OnPlatform
+                        x:TypeArguments="Thickness"
+                        iOS="10, 10, 10, 10"
+                        Android="10, 10, 10, 10"
+                        WinPhone="10, 10, 10, 10">
+                    </OnPlatform>
+                </StackLayout.Padding>
+                <SearchBar
+                    WidthRequest="200"
+                    VerticalOptions="CenterAndExpand"
+                    BackgroundColor="White"
+                    CancelButtonColor="#FFFFFF"
+                    PlaceholderColor="#FFFFFF"
+                    Placeholder="Search" />
+                <Image
+                    HorizontalOptions="EndAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    WidthRequest="30"
+                    HeightRequest="30"
+                    Source="fb_icon.png" />
+                <Image
+                    VerticalOptions="CenterAndExpand"
+                    WidthRequest="30"
+                    HeightRequest="30"
+                    Source="fb_icon.png" />
+                <Image
+                    VerticalOptions="CenterAndExpand"
+                    WidthRequest="30"
+                    HeightRequest="30"
+                    Source="fb_icon.png" />
+            </StackLayout>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

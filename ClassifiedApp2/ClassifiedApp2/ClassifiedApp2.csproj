@@ -33,5 +33,11 @@
     <Compile Update="Views\Tab3ChatPage.xaml.cs">
       <DependentUpon>Tab3ChatPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Controls\CustomHeader.xaml.cs">
+      <DependentUpon>CustomHeader.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Controls\HeaderControl.xaml" />
   </ItemGroup>
 </Project>
