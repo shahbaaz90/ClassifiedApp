@@ -27,11 +27,11 @@ namespace ClassifiedApp2
         {
             this.InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/LoginPage");
+            //await NavigationService.NavigateAsync("NavigationPage/LoginPage");
 
-           //await NavigationService.NavigateAsync(
-                //new Uri("/NavigationPage/RootTabbedPage?selectedTab=Tab1HomePage",
-                        //UriKind.Absolute));
+            await NavigationService.NavigateAsync(
+                 new Uri("/NavigationPage/RootTabbedPage?selectedTab=Tab1HomePage",
+                         UriKind.Absolute));
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)

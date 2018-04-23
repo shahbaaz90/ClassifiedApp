@@ -14,6 +14,10 @@ namespace ClassifiedApp2.Views
             InitializeComponent();
 
             NavigationPage.SetHasNavigationBar(this, false);
+
+            this.BarTheme = BarThemeTypes.Light;
+            this.FixedMode = true;
+            this.BarTextColor = Color.DeepSkyBlue;
         }
 
         public static readonly BindableProperty SearchPlaceHolderTextProperty = BindableProperty.Create(

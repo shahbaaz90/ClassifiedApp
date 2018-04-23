@@ -4,7 +4,7 @@
              xmlns:xf="clr-namespace:BottomBar.XamarinForms;assembly=BottomBar.XamarinForms"
     x:Class="ClassifiedApp2.Views.RootTabbedPage"
     xmlns:local="clr-namespace:ClassifiedApp2.Views"
-    Title="{Binding Title}">
+    Title="{Binding Title}" >
     <TabbedPage.Children>
         <local:Tab1HomePage Icon="HomeIcon.png" />
         <local:Tab2AlertsPage Icon="AlertsIcon.png" />

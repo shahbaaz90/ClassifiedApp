@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <color name="primary">#EEEEEE</color>
+  <color name="primaryDark">#BDBDBD</color>
+  <color name="accent">#121a1f</color>
+  <color name="window_background">#F5F5F5</color>
+  <color name="splash_background">#FFFFFF</color>
+  <color name="picker_color">#e7e8e9</color>
+  <color name="texthint_color">#1e1e1e</color>
+</resources>

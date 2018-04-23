@@ -29,11 +29,14 @@
                     </OnPlatform>
                 </StackLayout.Padding>
                 <SearchBar
-                    WidthRequest="200"
-                    VerticalOptions="CenterAndExpand"
-                    BackgroundColor="White"
-                    CancelButtonColor="#FFFFFF"
-                    PlaceholderColor="#FFFFFF"
+                    MinimumWidthRequest="150"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Start"
+                    HeightRequest="30"
+                    FontSize="{StaticResource RegularFontSize}"
+                    BackgroundColor="LightGray"
+                    CancelButtonColor="Gray"
+                    PlaceholderColor="Gray"
                     Placeholder="Search" />
                 <Image
                     HorizontalOptions="EndAndExpand"

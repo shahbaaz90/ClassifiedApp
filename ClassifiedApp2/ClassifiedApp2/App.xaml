@@ -10,9 +10,11 @@
             <!--Converters-->
             <!--Colors-->
             <Color
-                x:Key="PrimaryColor">#FF4081</Color>
+                x:Key="PrimaryColor">#FFFFF</Color>
             <Color
                 x:Key="SecondaryColor">#2b2926</Color>
+            <Color
+                x:Key="LightGrayish">#F4F5F7</Color>
             <Color
                 x:Key="SideMenuColor">#2b2926</Color>
             <Color
